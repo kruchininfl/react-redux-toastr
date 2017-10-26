@@ -137,7 +137,7 @@ export default class ToastrBox extends React.Component {
     }
 
     return (
-      <options.component remove={removeCurrentToastrFunc}/>
+      <options.component />
     );
   }
 
