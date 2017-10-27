@@ -131,9 +131,7 @@ export default class ToastrBox extends React.Component {
     const removeCurrentToastrFunc = () => this.props.remove(id);
 
     if (isValidElement(options.component)) {
-      return React.cloneElement(options.component, {
-        remove: removeCurrentToastrFunc
-      });
+      return React.cloneElement(options.component);
     }
 
     return (
